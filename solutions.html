@@ -57,6 +57,34 @@
   <!-- Template Main CSS File -->
   <link href="style.css" rel="stylesheet">
 
+  <style>
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+
+    .whatsapp-button a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: green;
+        border-radius: 90%;
+        color: white;
+        font-size: 40px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-button a:hover {
+        background-color: darkgreen;
+    }
+  </style>
+
+  
 </head>
 
 <body>
@@ -226,6 +254,14 @@
     </div>
    
   </div>
+   
+ <!-- WhatsApp button -->
+    <div id="whatsapp-button" class="whatsapp-button">
+        <a href="https://wa.me/03144641288" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+   
 </footer><!-- End Footer -->
 
 
