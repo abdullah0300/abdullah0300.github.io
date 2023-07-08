@@ -134,9 +134,37 @@
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1>Welcome to <span>Transfo Line</span></h1>
       <h2>Powering Your Success with Reliable Electrical Solutions</h2>
-      <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-      </div>
+     <style>
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:  white;
+            padding: 20px;
+            color: black;
+            font-size: 18px;
+            z-index: 9999;
+        }
+    </style>
+    
+    <div class="d-flex">
+        <a href="#" class="btn-get-started scrollto" onclick="showPhoneNumber()">Call Us</a>
+    </div>
+    
+    <div id="popup" class="popup" style="display: none;">
+        <span id="phone-number"></span>
+    </div>
+    
+    <script>
+        function showPhoneNumber() {
+            var phoneNumber = '+923046806671';
+            var popup = document.getElementById('popup');
+            var phoneNumberElement = document.getElementById('phone-number');
+            phoneNumberElement.textContent = 'Phone Number: ' + phoneNumber;
+            popup.style.display = 'block';
+        }
+    </script>
     </div>
   </section><!-- End Hero -->
 
